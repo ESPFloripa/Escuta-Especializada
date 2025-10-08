@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capacitação em Escuta Especializada | SMS Florianópolis</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -50,7 +51,7 @@
             transform: rotateY(180deg);
             padding: 2rem;
         }
-        /* [END] New Card Flip Styles */
+        /* [END] New Card Flip Style*/s */
         .flow-box {
             @apply bg-white p-4 rounded-lg shadow-md text-center border-2 border-gray-200 transition-transform duration-300 hover:scale-105 hover:shadow-xl;
         }
@@ -116,9 +117,15 @@
     <main class="container mx-auto px-6 py-12">
 
         <!-- Seção Hero -->
-        <section class="bg-gray-800 text-center mb-20 py-20 px-6 rounded-xl shadow-lg">
-            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Capacitação para Equipes de Saúde</h1>
-            <p class="text-lg text-gray-300 max-w-3xl mx-auto">Um guia prático e rápido para a aplicação do Protocolo de Escuta Especializada de Florianópolis na proteção de crianças e adolescentes.</p>
+        <section class="relative text-center mb-20 py-20 px-6 rounded-xl shadow-lg overflow-hidden" style="background-image: url('https://i.imgur.com/NmUH363.jpeg'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 bg-gray-800 opacity-60"></div>
+            <div class="relative z-10">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Capacitação para Equipes de Saúde</h1>
+                <p class="text-lg text-gray-200 max-w-3xl mx-auto">Um guia prático e rápido para a aplicação do Protocolo de Escuta Especializada de Florianópolis na proteção de crianças e adolescentes.</p>
+                <a href="#" id="open-modal-btn" class="mt-8 inline-block bg-blue-600 text-white font-bold text-lg px-8 py-3 rounded-lg shadow-md hover:bg-blue-700 transition-transform transform hover:scale-105">
+                    <i class="fas fa-graduation-cap mr-2"></i>Curso Livre
+                </a>
+            </div>
         </section>
 
         <!-- Seção O Protocolo -->
@@ -170,9 +177,13 @@
                 <!-- Card 1 com Flip -->
                 <div class="flip-card">
                     <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3 class="font-bold text-2xl text-teal-700">1. Acolhida de Revelação</h3>
-                            <p class="mt-4">Ocorre de forma espontânea, quando a criança ou adolescente demonstra sinais ou revela a violência.</p>
+                        <div class="flip-card-front overflow-hidden">
+                            <img src="https://i.imgur.com/tD4skpc.jpeg" alt="Mãos segurando as mãos de uma criança" class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                            <div class="relative z-10 text-white text-center p-4">
+                                <h3 class="font-bold text-2xl">1. Acolhida de Revelação</h3>
+                                <p class="mt-4">Ocorre de forma espontânea, quando a criança ou adolescente demonstra sinais ou revela a violência.</p>
+                            </div>
                         </div>
                         <div class="flip-card-back">
                             <ul class="space-y-3 text-left list-disc list-inside">
@@ -187,9 +198,13 @@
                 <!-- Card 2 com Flip -->
                 <div class="flip-card">
                     <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3 class="font-bold text-2xl text-indigo-700">2. Entrevista de Escuta Especializada</h3>
-                            <p class="mt-4">Atividade de entrevista diferenciada e de <span class="font-semibold">excepcionalidade</span>, realizada apenas quando há suspeita de violência.</p>
+                        <div class="flip-card-front overflow-hidden">
+                            <img src="https://i.imgur.com/HW5SPzU.jpeg" alt="Profissional de saúde conversando com uma jovem" class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                            <div class="relative z-10 text-white text-center p-4">
+                                <h3 class="font-bold text-2xl">2. Entrevista de Escuta Especializada</h3>
+                                <p class="mt-4">Atividade de entrevista diferenciada e de <span class="font-semibold">excepcionalidade</span>, realizada apenas quando há suspeita de violência.</p>
+                            </div>
                         </div>
                          <div class="flip-card-back">
                             <ul class="space-y-3 text-left list-disc list-inside">
@@ -207,7 +222,7 @@
         <section id="fluxograma" class="mb-20 scroll-mt-24">
             <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Fluxograma da Escuta Especializada (SMS)</h2>
             <div class="bg-gray-100 p-4 sm:p-8 rounded-xl shadow-inner">
-                <img src="https://i.imgur.com/UTSynRc.png" alt="Fluxograma da Escuta Especializada da SMS de Florianópolis" class="mx-auto rounded-lg shadow-md">
+                <img src="https://i.imgur.com/r9VkO8I.png" alt="Fluxograma da Escuta Especializada da SMS de Florianópolis com QR Code para avaliação" class="mx-auto rounded-lg shadow-md">
             </div>
         </section>
 
@@ -264,7 +279,7 @@
                             </ul>
                             <div class="mt-4 bg-red-100 border-l-4 border-red-500 text-red-700 p-4 rounded-r-lg" role="alert">
                                 <p class="font-bold">Atenção!</p>
-                                <p>A ficha do SINAN e o prontuário médico NUNCA devem ser usados como comunicação à polícia, sob risco de responsabilização.</p>
+                                <p>A ficha do SINAN e o prontuário do paciente NUNCA devem ser usados como comunicação à polícia, a não ser por determinação judicial.</p>
                             </div>
                         </div>
                     </div>
@@ -331,15 +346,15 @@
         <section id="recursos" class="scroll-mt-24">
              <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Recursos e Links Úteis</h2>
              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                 <a href="https://www.pmf.sc.gov.br/entidades/semas/index.php?cms=protocolo+escuta+especializada&menu=10&submenuid=2702" target="_blank" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all">
+                 <a href="https://www.pmf.sc.gov.br/entidades/semas/index.php?cms=protocolo+escuta+especializada&menu=10&submenuid=2702" target="_blank" class="block relative bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:scale-150 hover:z-10 transition-all duration-300">
                     <h3 class="font-bold text-lg text-blue-700">Protocolo Completo e Formulários</h3>
                     <p class="text-sm text-gray-600 mt-2">Acesse a página oficial da Secretaria da Assistência Social para baixar o protocolo e o formulário de registro.</p>
                  </a>
-                 <a href="https://sites.google.com/sme.pmf.sc.gov.br/protocolodeescutaespecializada/in%C3%ADcio?authuser=0" target="_blank" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all">
+                 <a href="https://sites.google.com/sme.pmf.sc.gov.br/protocolodeescutaespecializada/in%C3%ADcio?authuser=0" target="_blank" class="block relative bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:scale-150 hover:z-10 transition-all duration-300">
                     <h3 class="font-bold text-lg text-blue-700">Site do Comitê Gestor</h3>
                     <p class="text-sm text-gray-600 mt-2">Encontre materiais informativos, acesso a formações e capacitações realizadas pelo comitê.</p>
                  </a>
-                 <a href="https://www.pmf.sc.gov.br/entidades/semas/index.php?cms=conselho+tutelar&menu=6&submenuid=219" target="_blank" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all">
+                 <a href="https://www.pmf.sc.gov.br/entidades/semas/index.php?cms=conselho+tutelar&menu=6&submenuid=219" target="_blank" class="block relative bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:scale-150 hover:z-10 transition-all duration-300">
                     <h3 class="font-bold text-lg text-blue-700">Contato dos Conselhos Tutelares</h3>
                     <p class="text-sm text-gray-600 mt-2">Localize os contatos e endereços dos Conselhos Tutelares de Florianópolis.</p>
                  </a>
@@ -352,17 +367,53 @@
                     <iframe class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg" src="https://www.youtube.com/embed/eITWAe1VGWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </div>
+            
         </section>
 
     </main>
 
+    <!-- Seção de Inscrição e Teste do Curso Livre -->
+    <section id="curso-livre-links" class="container mx-auto px-6 py-12">
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+             <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Curso Livre: Inscrição e Teste de Aproveitamento</h2>
+             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                 <a href="https://espfloripa.github.io/cursoslivres/" target="_blank" class="block relative bg-green-100 border-2 border-green-300 p-6 rounded-lg shadow-md hover:shadow-xl hover:border-green-400 transition-all duration-300 transform hover:scale-105">
+                    <h3 class="font-bold text-lg text-green-800">Inscrição para o Curso Livre</h3>
+                    <p class="text-sm text-gray-700 mt-2">Clique aqui para preencher o formulário de inscrição para o curso.</p>
+                 </a>
+                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDK5czarERK4UK8hW9aAUIN3IRc8da4VOq_TzMgpS9QCPt-A/viewform?usp=header" target="_blank" class="block relative bg-yellow-100 border-2 border-yellow-300 p-6 rounded-lg shadow-md hover:shadow-xl hover:border-yellow-400 transition-all duration-300 transform hover:scale-105">
+                    <h3 class="font-bold text-lg text-yellow-800">Teste de Aproveitamento</h3>
+                    <p class="text-sm text-gray-700 mt-2">Após se inscrever e estudar, realize o teste final aqui. </p>
+                 </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white mt-20">
+    <footer class="bg-gray-800 text-white">
         <div class="container mx-auto px-6 py-8 text-center">
             <p>Este material foi criado pela Gerencia de Integração Assistencial em parceria com a Escola de Saúde Pública de Florianópolis.</p>
             <p class="text-sm text-gray-400 mt-2">&copy; Prefeitura Municipal de Florianópolis</p>
         </div>
     </footer>
+
+    <!-- Modal do Curso Livre -->
+    <div id="course-modal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg shadow-xl p-8 max-w-2xl w-11/12 relative animate-fade-in-down">
+            <button id="close-modal-btn" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold">&times;</button>
+            <h2 class="text-2xl font-bold mb-4 text-blue-800">Instruções do Curso Livre</h2>
+            <div class="text-gray-700 space-y-3 max-h-[70vh] overflow-y-auto pr-4">
+                <p>Este Curso Livre é voltado para profissionais de saúde de nível superior e será certificado com a carga horária de 2 horas/aula.</p>
+                <p>Você deve clicar no botão disponível no fim desta página (ou <a href="#curso-livre-links" id="modal-link-recursos" class="text-blue-600 hover:underline font-semibold">aqui</a>) e preencher todos os campos para se inscrever no curso no mês corrente.</p>
+                <p>Após a inscrição realizada, você tem até o último dia do mês para responder o teste de aproveitamento disponibilizado no botão no fim da página (não confundir com o Quiz!).</p>
+                <p>Ao responder o teste de aproveitamento coloque o nome completo e CPF conforme você colocou no link de inscrição.</p>
+                <p>A nota de corte para aprovação é de 80%.</p>
+                <p>O teste de aproveitamento só permite uma resposta por participante, caso você não seja aprovado poderá repetir o curso no mês seguinte.</p>
+                <p>O certificado será disponibilizado até o último dia útil do mês seguinte à finalização do curso.</p>
+            </div>
+        </div>
+    </div>
+
 
     <script>
         // Lógica para o menu mobile
@@ -441,8 +492,8 @@
         const quizData = [
             {
                 question: "Qual é a principal finalidade da Escuta Especializada, de acordo com o Decreto n° 9.603/2018?",
-                options: ["Produzir provas para um processo judicial.", "Garantir a proteção social e o provimento de cuidados à vítima.", "Responsabilizar criminalmente o agressor.", "Realizar uma investigação policial detalhada."],
-                answer: "Garantir a proteção social e o provimento de cuidados à vítima."
+                options: ["Produzir provas para um processo judicial.", "Garantir a proteção social e o provimento de cuidados à pessoa em situação de violência.", "Responsabilizar criminalmente o agressor.", "Realizar uma investigação policial detalhada."],
+                answer: "Garantir a proteção social e o provimento de cuidados à pessoa em situação de violência."
             },
             {
                 question: "Quem pode realizar o procedimento de 'Acolhida de Revelação'?",
@@ -476,8 +527,8 @@
             },
             {
                 question: "A Ficha de Notificação do SINAN pode ser enviada para a autoridade policial como um documento de comunicação do caso?",
-                options: ["Sim, é o principal documento para iniciar a investigação.", "Não, a ficha do SINAN e o prontuário não devem ser usados para essa finalidade.", "Sim, mas apenas com autorização judicial.", "Apenas em casos onde não há familiar protetivo."],
-                answer: "Não, a ficha do SINAN e o prontuário não devem ser usados para essa finalidade."
+                options: ["Sim, é o principal documento para iniciar a investigação.", "Não, a ficha do SINAN e o prontuário não devem ser usados para essa finalidade, salvo por determinação judicial.", "Não, nem mesmo sob determinação judicial.", "Apenas em casos onde não há familiar protetivo."],
+                answer: "Não, a ficha do SINAN e o prontuário não devem ser usados para essa finalidade, salvo por determinação judicial."
             },
             {
                 question: "Quando o Conselho Tutelar deve ser comunicado sobre um caso de violência contra criança ou adolescente?",
@@ -485,9 +536,9 @@
                 answer: "Em todos os casos, sendo de forma imediata em situações emergenciais."
             },
             {
-                question: "O que deve ser feito se houver sinais evidentes de gravidade, como gravidez decorrente de violência?",
-                options: ["Aguardar a consulta com o especialista.", "Comunicar apenas o Conselho Tutelar.", "Acionar imediatamente a Segurança Pública.", "Realizar apenas a notificação no SINAN."],
-                answer: "Acionar imediatamente a Segurança Pública."
+                question: "Qual é o prazo regular para comunicar um caso de violência ao Conselho Tutelar, segundo o protocolo?",
+                options: ["Imediatamente, em todos os casos.", "Em até 24 horas.", "Em até 05 (cinco) dias úteis, salvo em emergências.", "Apenas quando o Conselho Tutelar solicitar."],
+                answer: "Em até 05 (cinco) dias úteis, salvo em emergências."
             }
         ];
 
@@ -635,12 +686,38 @@
         restartQuizBtn.addEventListener('click', startQuiz);
         // [END] Lógica do Quiz
 
+        // [START] Lógica do Modal
+        const openModalBtn = document.getElementById('open-modal-btn');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+        const courseModal = document.getElementById('course-modal');
+        const modalLinkRecursos = document.getElementById('modal-link-recursos');
+
+        function closeModal() {
+            courseModal.classList.add('hidden');
+        }
+
+        openModalBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            courseModal.classList.remove('hidden');
+        });
+
+        closeModalBtn.addEventListener('click', closeModal);
+
+        courseModal.addEventListener('click', (e) => {
+            if (e.target === courseModal) {
+                closeModal();
+            }
+        });
+        
+        modalLinkRecursos.addEventListener('click', (e) => {
+            closeModal();
+        });
+        // [END] Lógica do Modal
+
     </script>
 
 </body>
 </html>
-
-
 
 
 
