@@ -92,13 +92,14 @@
                 <a href="#">Escuta Especializada</a>
             </div>
             <div class="hidden md:flex space-x-6 items-center">
+                <a href="#video" class="text-gray-600 hover:text-blue-600 transition">Vídeo</a>
                 <a href="#protocolo" class="text-gray-600 hover:text-blue-600 transition">O Protocolo</a>
                 <a href="#procedimentos" class="text-gray-600 hover:text-blue-600 transition">Procedimentos</a>
                 <a href="#fluxograma" class="text-gray-600 hover:text-blue-600 transition">Fluxograma</a>
                 <a href="#passo-a-passo" class="text-gray-600 hover:text-blue-600 transition">Passo a Passo</a>
                 <a href="#quiz" class="text-gray-600 hover:text-blue-600 transition">Quiz</a>
                 <a href="#recursos" class="text-gray-600 hover:text-blue-600 transition">Recursos</a>
-                <a href="#curso-livre-links" class="text-gray-600 hover:text-blue-600 transition">Curso Livre</a>
+                <a href="#curso-livre-links" class="text-gray-600 hover:text-blue-600 transition">Teste de Aproveitamento</a>
             </div>
             <button id="mobile-menu-button" class="md:hidden">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
@@ -106,13 +107,14 @@
         </nav>
         <!-- Menu Mobile -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#video" class="block py-2 text-gray-600 hover:text-blue-600 transition">Vídeo</a>
             <a href="#protocolo" class="block py-2 text-gray-600 hover:text-blue-600 transition">O Protocolo</a>
             <a href="#procedimentos" class="block py-2 text-gray-600 hover:text-blue-600 transition">Procedimentos</a>
             <a href="#fluxograma" class="block py-2 text-gray-600 hover:text-blue-600 transition">Fluxograma</a>
             <a href="#passo-a-passo" class="block py-2 text-gray-600 hover:text-blue-600 transition">Passo a Passo</a>
             <a href="#quiz" class="block py-2 text-gray-600 hover:text-blue-600 transition">Quiz</a>
             <a href="#recursos" class="block py-2 text-gray-600 hover:text-blue-600 transition">Recursos</a>
-            <a href="#curso-livre-links" class="block py-2 text-gray-600 hover:text-blue-600 transition">Curso Livre</a>
+            <a href="#curso-livre-links" class="block py-2 text-gray-600 hover:text-blue-600 transition">Teste de Aproveitamento</a>
         </div>
     </header>
 
@@ -124,9 +126,22 @@
             <div class="relative z-10">
                 <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Capacitação para Equipes de Saúde</h1>
                 <p class="text-lg text-gray-200 max-w-3xl mx-auto">Um guia prático e rápido para a aplicação do Protocolo de Escuta Especializada de Florianópolis na proteção de crianças e adolescentes.</p>
-                <a href="#" id="open-modal-btn" class="mt-8 inline-block bg-blue-600 text-white font-bold text-lg px-8 py-3 rounded-lg shadow-md hover:bg-blue-700 transition-transform transform hover:scale-105">
-                    <i class="fas fa-graduation-cap mr-2"></i>Curso Livre
-                </a>
+                <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="#" id="open-modal-btn" class="inline-block bg-blue-600 text-white font-bold text-lg px-8 py-3 rounded-lg shadow-md hover:bg-blue-700 transition-transform transform hover:scale-105">
+                        <i class="fas fa-graduation-cap mr-2"></i>Curso Livre - Instruções
+                    </a>
+                    <a href="https://espfloripa.github.io/cursoslivres/" target="_blank" class="inline-block bg-green-600 text-white font-bold text-lg px-8 py-3 rounded-lg shadow-md hover:bg-green-700 transition-transform transform hover:scale-105">
+                        <i class="fas fa-file-signature mr-2"></i>Curso Livre - Inscrição
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção do Vídeo -->
+        <section id="video" class="mb-20 scroll-mt-24">
+            <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Entendendo a Escuta Especializada</h2>
+            <div class="relative max-w-4xl mx-auto rounded-lg shadow-lg overflow-hidden" style="padding-bottom: 56.25%;">
+                <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/4m28A1CBEKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </section>
 
@@ -360,15 +375,6 @@
                     <p class="text-sm text-gray-600 mt-2">Localize os contatos e endereços dos Conselhos Tutelares de Florianópolis.</p>
                  </a>
              </div>
-             
-             <!-- Vídeo Adicionado -->
-             <div class="mt-12">
-                <h3 class="text-2xl font-bold text-center mb-6 text-gray-800">Entendendo a Escuta Especializada</h3>
-                <div class="relative max-w-4xl mx-auto" style="padding-bottom: 56.25%;">
-                    <iframe class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg" src="https://www.youtube.com/embed/4m28A1CBEKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-            </div>
-            
         </section>
 
     </main>
@@ -376,12 +382,8 @@
     <!-- Seção de Inscrição e Teste do Curso Livre -->
     <section id="curso-livre-links" class="container mx-auto px-6 py-12">
         <div class="bg-white p-8 rounded-xl shadow-lg">
-             <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Curso Livre: Inscrição e Teste de Aproveitamento</h2>
-             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                 <a href="https://espfloripa.github.io/cursoslivres/" target="_blank" class="block relative bg-green-100 border-2 border-green-300 p-6 rounded-lg shadow-md hover:shadow-xl hover:border-green-400 transition-all duration-300 transform hover:scale-105">
-                    <h3 class="font-bold text-lg text-green-800">Inscrição para o Curso Livre</h3>
-                    <p class="text-sm text-gray-700 mt-2">Clique aqui para preencher o formulário de inscrição para o curso.</p>
-                 </a>
+             <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Curso Livre: Teste de Aproveitamento</h2>
+             <div class="max-w-md mx-auto">
                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDK5czarERK4UK8hW9aAUIN3IRc8da4VOq_TzMgpS9QCPt-A/viewform?usp=header" target="_blank" class="block relative bg-yellow-100 border-2 border-yellow-300 p-6 rounded-lg shadow-md hover:shadow-xl hover:border-yellow-400 transition-all duration-300 transform hover:scale-105">
                     <h3 class="font-bold text-lg text-yellow-800">Teste de Aproveitamento</h3>
                     <p class="text-sm text-gray-700 mt-2">Após se inscrever e estudar, realize o teste final aqui. Será necessário login com uma conta Google. </p>
@@ -405,8 +407,8 @@
             <h2 class="text-2xl font-bold mb-4 text-blue-800">Instruções do Curso Livre</h2>
             <div class="text-gray-700 space-y-3 max-h-[70vh] overflow-y-auto pr-4">
                 <p>Este Curso Livre é voltado para profissionais de saúde de nível superior e médio e será certificado com a carga horária de 2 horas/aula.</p>
-                <p>Você deve clicar no botão disponível no fim desta página (ou <a href="#curso-livre-links" id="modal-link-recursos" class="text-blue-600 hover:underline font-semibold">aqui</a>) e preencher todos os campos para se inscrever no curso no mês corrente.</p>
-                <p>Após a inscrição realizada, você tem até o último dia do mês para responder o teste de aproveitamento disponibilizado no botão no fim da página (não confundir com o Quiz!).</p>
+                <p>Você deve clicar no botão ao lado (ou <a href="#curso-livre-links" id="modal-link-recursos" class="text-blue-600 hover:underline font-semibold">aqui</a>) e preencher todos os campos para se inscrever no curso no mês corrente.</p>
+                <p>Após a inscrição realizada, você deve explorar o conteúdo e tem até o último dia do mês para responder o teste de aproveitamento disponibilizado no botão no fim da página (não confundir com o Quiz!).</p>
                 <p>Para responder o teste de aproveitamento você deve estar logado em uma conta Google, coloque o nome completo, CPF e e-mail conforme você colocou no link de inscrição.</p>
                 <p>A nota de corte para aprovação é de 80%.</p>
                 <p>O teste de aproveitamento só permite uma resposta por participante, caso você não seja aprovado poderá repetir o curso no mês seguinte.</p>
@@ -719,9 +721,4 @@
 
 </body>
 </html>
-
-
-
-
-
 
